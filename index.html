@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link type="image/x-icon" rel="icon" href="./tetris.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tetris - Vite + Vue + TS</title>
+    <script type="module" crossorigin src="./js/index-4698813c.js"></script>
+    <link rel="stylesheet" href="./css/index-c6d69dcd.css">
+  </head>
+  <body>
+    <div id="app"></div>
+    
+    <script type="text/javascript">
+      try {
+        const vscode = acquireVsCodeApi()
+        // 异常采集
+        let execCount = 0
+        setInterval(() => {
+          execCount++
+        }, 10)
+        // 异常检测
+        setTimeout(() => {
+          if (execCount < 20) {
+            vscode.postMessage('error')
+          } else {
+            vscode.postMessage('ok')
+          }
+        }, 2000)
+      } catch (e) {
+        console.log('非VSCode平台.')
+      }
+    </script>
+  </body>
+</html>
